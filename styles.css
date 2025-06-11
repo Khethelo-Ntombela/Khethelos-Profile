@@ -1,7 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  background-color: #f4f4f4;
+  padding: 0;
+  background-color: #f5f7fa;
   color: #333;
   line-height: 1.6;
 }
@@ -19,16 +20,17 @@ header {
 }
 
 nav {
-  background: #457b9d;
   display: flex;
   justify-content: center;
+  background: #457b9d;
   flex-wrap: wrap;
 }
 
 nav a {
   color: white;
+  padding: 1rem 1.5rem;
   text-decoration: none;
-  padding: 1rem;
+  font-weight: bold;
 }
 
 nav a:hover {
@@ -36,16 +38,40 @@ nav a:hover {
 }
 
 section {
-  background: white;
-  margin: 1.5rem auto;
   padding: 2rem;
-  max-width: 900px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 1rem auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
 }
 
 ul {
-  list-style: disc;
   padding-left: 2rem;
+  list-style-type: square;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 300px;
+  background: #f1f1f1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 footer {
@@ -53,4 +79,5 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
+  margin-top: 2rem;
 }
