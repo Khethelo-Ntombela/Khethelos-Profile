@@ -2,10 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Litha Ntombela Enterprises</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="favicon.ico" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e8f0f7);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #1d3557;
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem;
+      position: relative;
+    }
+    .logo {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #457b9d;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s, transform 0.3s;
+    }
+    nav a:hover {
+      background: #1d3557;
+      transform: scale(1.05);
+    }
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .card {
+      flex: 1;
+      min-width: 280px;
+      max-width: 350px;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+    .card h3 {
+      margin-bottom: 1rem;
+    }
+    footer {
+      background: #1d3557;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 4rem;
+    }
+    .contact p a {
+      color: #1d3557;
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -14,76 +101,60 @@
     <p>Your Trusted Partner in Logistics, Manufacturing &amp; Farming</p>
   </header>
 
-  <nav aria-label="Primary navigation">
-    <a href="#about" role="link" tabindex="0">About</a>
-    <a href="#services" role="link" tabindex="0">Services</a>
-    <a href="#contact" role="link" tabindex="0">Contact</a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <main>
-    <section id="about" tabindex="-1">
-      <h2>About Us</h2>
-      <p>
-        <strong>Litha Ntombela Enterprises</strong> is a proudly South African, 100% black-owned business founded and owned by <strong>Khethelo Litha Ntombela</strong>. Based in Gauteng, we operate as an integrated enterprise across three key sectors:
-      </p>
-      <ul>
-        <li><strong>Logistics:</strong> Outsourcing transport solutions through a trusted network of providers</li>
-        <li><strong>Manufacturing:</strong> Producing high-quality, affordable sanitary pads under our <em>Blush Petals</em> brand</li>
-        <li><strong>Farming:</strong> Ethical pig and cow farming to support local food security and rural development</li>
-      </ul>
-      <p>
-        United by one vision — to uplift communities and empower businesses through excellence, affordability, and innovation — we are committed to long-term impact in South Africa.
-      </p>
-    </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      <strong>Litha Ntombela Enterprises</strong> is a 100% black-owned South African company founded by <strong>Khethelo Litha Ntombela</strong>. We proudly operate across three vital sectors:
+    </p>
+    <ul>
+      <li><strong>Logistics:</strong> We manage and outsource reliable transport services across South Africa.</li>
+      <li><strong>Manufacturing:</strong> We produce <strong>Blush Petals</strong> sanitary pads — quality, affordable, and made with dignity in mind.</li>
+      <li><strong>Farming:</strong> Ethical, sustainable pig and cow farming to support food security and rural economies.</li>
+    </ul>
+    <p>
+      Our mission is to uplift communities and empower the youth, especially young girls, by ensuring access to basic resources like menstrual hygiene products and nutritious food.
+    </p>
+  </section>
 
-    <section id="services" tabindex="-1">
-      <h2>Our Services</h2>
-      <div class="card-container">
-        <article class="card" tabindex="0" aria-label="Logistics Solutions">
-          <h3>🚚 Logistics Solutions</h3>
-          <p>
-            We broker cost-effective, reliable transportation by outsourcing fleets and managing freight for businesses nationwide.
-          </p>
-        </article>
-        <article class="card" tabindex="0" aria-label="Blush Petals Sanitary Pad Manufacturing">
-          <h3>🩺 Blush Petals Sanitary Pad Manufacturing</h3>
-          <p>
-            Our <strong>Blush Petals</strong> sanitary pads are designed to promote women’s health, comfort, and dignity. We manufacture affordable, high-quality pads accessible to girls and women from all walks of life.
-          </p>
-          <p>
-            We believe every girl in South Africa deserves access to safe and reliable menstrual hygiene products, helping reduce school absenteeism and empower young women to reach their full potential.
-          </p>
-          <p>
-            Through partnerships with local communities and NGOs, we aim to distribute <em>Blush Petals</em> pads to underserved areas and raise awareness about menstrual health.
-          </p>
-        </article>
-        <article class="card" tabindex="0" aria-label="Sustainable Farming Operations">
-          <h3>🐖 Sustainable Farming Operations</h3>
-          <p>
-            Our farming division focuses on ethical and sustainable pig and cow farming projects. We prioritize animal welfare, environmental stewardship, and community empowerment.
-          </p>
-          <p>
-            By supporting local farmers and investing in modern, sustainable practices, we contribute directly to improving food security and nutrition in Gauteng and beyond.
-          </p>
-          <p>
-            We are passionate about creating opportunities in rural areas, helping farmers increase productivity while maintaining respect for the land and animals.
-          </p>
-        </article>
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>🚚 Logistics</h3>
+        <p>
+          We coordinate transport fleets and logistics solutions that are cost-efficient, timely, and nationwide.
+        </p>
       </div>
-    </section>
+      <div class="card">
+        <h3>🩺 Blush Petals Pads</h3>
+        <p>
+          Our <strong>Blush Petals</strong> brand is about restoring dignity. We provide affordable, high-quality sanitary pads and advocate for menstrual health awareness in rural and township schools.
+        </p>
+      </div>
+      <div class="card">
+        <h3>🐄 Sustainable Farming</h3>
+        <p>
+          We raise pigs and cows responsibly while creating jobs and improving access to affordable protein for South African communities.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" tabindex="-1">
-      <h2>Contact Us</h2>
-      <address>
-        <p><strong>Location:</strong> Gauteng, South Africa</p>
-        <p><strong>Phone:</strong> <a href="tel:+27661458624">066 145 8624</a></p>
-        <p><strong>Email:</strong> <a href="mailto:ntombelakl15@gmail.com">ntombelakl15@gmail.com</a></p>
-      </address>
-    </section>
-  </main>
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Location:</strong> Gauteng, South Africa</p>
+    <p><strong>Phone:</strong> <a href="tel:+27661458624">066 145 8624</a></p>
+    <p><strong>Email:</strong> <a href="mailto:ntombelakl15@gmail.com">ntombelakl15@gmail.com</a></p>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Litha Ntombela Enterprises. All rights reserved.</p>
+    <p>&copy; 2025 Litha Ntombela Enterprises. Designed with purpose and passion.</p>
   </footer>
 </body>
 </html>
