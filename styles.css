@@ -1,83 +1,78 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f7fa;
-  color: #333;
-  line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Litha Ntombela Enterprises</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Add favicon if you want -->
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header>
+    <img src="LITHA NTOMBELA (1).png" alt="Litha Ntombela Logo" class="logo" />
+    <h1>Litha Ntombela Enterprises</h1>
+    <p>Your Trusted Partner in Logistics, Manufacturing &amp; Farming</p>
+  </header>
 
-header {
-  background: #1d3557;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-}
+  <nav aria-label="Primary navigation">
+    <a href="#about" role="link" tabindex="0">About</a>
+    <a href="#services" role="link" tabindex="0">Services</a>
+    <a href="#contact" role="link" tabindex="0">Contact</a>
+  </nav>
 
-.logo {
-  max-width: 120px;
-  margin-bottom: 1rem;
-}
+  <main>
+    <section id="about" tabindex="-1">
+      <h2>About Us</h2>
+      <p>
+        <strong>Litha Ntombela Enterprises</strong> is a proudly South African, 100% black-owned business founded and owned by <strong>Khethelo Litha Ntombela</strong>. Based in Gauteng, we operate as an integrated enterprise across three key sectors:
+      </p>
+      <ul>
+        <li><strong>Logistics:</strong> Outsourcing transport solutions through a trusted network of providers</li>
+        <li><strong>Manufacturing:</strong> Producing high-quality, affordable sanitary pads</li>
+        <li><strong>Farming:</strong> Ethical pig and cow farming to support local food security</li>
+      </ul>
+      <p>
+        United by one vision — to uplift communities and empower businesses through excellence, affordability, and innovation — we are committed to long-term impact in South Africa.
+      </p>
+    </section>
 
-nav {
-  display: flex;
-  justify-content: center;
-  background: #457b9d;
-  flex-wrap: wrap;
-}
+    <section id="services" tabindex="-1">
+      <h2>Our Services</h2>
+      <div class="card-container">
+        <article class="card" tabindex="0" aria-label="Logistics Solutions">
+          <h3>🚚 Logistics Solutions</h3>
+          <p>
+            We broker cost-effective, reliable transportation by outsourcing fleets and managing freight for businesses nationwide.
+          </p>
+        </article>
+        <article class="card" tabindex="0" aria-label="Sanitary Pad Manufacturing">
+          <h3>🩺 Sanitary Pad Manufacturing</h3>
+          <p>
+            We manufacture affordable, high-quality sanitary pads that promote women’s health and dignity across South Africa.
+          </p>
+        </article>
+        <article class="card" tabindex="0" aria-label="Farming Operations">
+          <h3>🐖 Farming Operations</h3>
+          <p>
+            We run sustainable pig and cow farming projects to contribute to food security and rural development.
+          </p>
+        </article>
+      </div>
+    </section>
 
-nav a {
-  color: white;
-  padding: 1rem 1.5rem;
-  text-decoration: none;
-  font-weight: bold;
-}
+    <section id="contact" tabindex="-1">
+      <h2>Contact Us</h2>
+      <address>
+        <p><strong>Location:</strong> Gauteng, South Africa</p>
+        <p><strong>Phone:</strong> <a href="tel:+27661458624">066 145 8624</a></p>
+        <p><strong>Email:</strong> <a href="mailto:ntombelakl15@gmail.com">ntombelakl15@gmail.com</a></p>
+      </address>
+    </section>
+  </main>
 
-nav a:hover {
-  background: #1d3557;
-}
-
-section {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: 1rem auto;
-  background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  border-radius: 8px;
-}
-
-ul {
-  padding-left: 2rem;
-  list-style-type: square;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.card {
-  flex: 1;
-  min-width: 280px;
-  max-width: 300px;
-  background: #f1f1f1;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-footer {
-  background: #1d3557;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
+  <footer>
+    <p>&copy; 2025 Litha Ntombela Enterprises. All rights reserved.</p>
+  </footer>
+</body>
+</html>
